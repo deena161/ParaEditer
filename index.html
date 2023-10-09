@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Edit</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <h1><span id="span">Para Edit</span></h1> <br>
+    <h2>Creativity</h2>
+    <div class="main">
+        <div class="parent">
+            <textarea placeholder="Write here..." id="input"></textarea>
+        </div>
+        <div id="flow">
+        <div class="container">
+            <div class="child" onclick="bold()" >Bold</div>
+            <div class="child" id="italic" onclick="italic()">Italic</div>
+            <div class="child" onclick="upper()">Upper</div>
+            <div class="child" onclick="lower()">Lower</div>
+            <div class="child" id="reduse" onclick="capitalize()">Capitalize</div>
+            <div class="child" id="increase" onclick="line_height()"></div>
+            <div class="child" id="decrease" onclick="line_height_decrease()"></div>
+            <div class="child" id="left" onclick="align_left()"></div>
+            <div class="child" id="center" onclick="align_center()"></div>
+            <div class="child" id="right" onclick="align_right()"></div>
+            <div class="child" id="justify" onclick="align_justify()"></div>
+            <div class="child" id="space_increase" onclick="letter_space()"></div>
+            <div class="child" id="space_decrease" onclick="letter_space_decrease()"></div>
+            <div class="child" id="indent_increase" onclick="text_indent()"></div>
+            <div class="child" id="indent_decrease" onclick="text_indent_decrease()"></div>
+            <div class="child" id="underline" onclick="underline()"></div>
+            <div class="child" id="overline" onclick="overline()"></div>
+            <div class="child" id="throughline" onclick="throughline()"></div>
+            <div class="child" onclick="cancel()">Clear</div>
+            <!--<div class="child" onclick="copyText()" id="copy"><a title="Double click to Download">Copy</a></div>-->
+            <div id="childs">
+                <div class="child" onclick="copyText()" id="copy" title="Scroll down to print">Copy</div>
+                <div class="child" onclick="printText()" id="print" title="Scroll up to Copy">print</div>
+               </div>
+            <div class="child" onclick="variant()">Variant</div>
+            <div class="child" onclick="color()"> <input type="color" id="colors"> </div>
+            <div class="child" id="family">
+                <select name="" id="font" >
+                    <option value="1" id="name1">Roboto</option>
+                    <option value="2" id="name2">Young Serif</option>
+                    <option value="3" id="name3">Gabarito</option>
+                    <option value="4" id="name4">Roboto Mono</option>
+                    <option value="5" id="name5">Oswald</option>
+                    <option value="6" id="name6">Dela Gothic One</option>
+                    <option value="7" id="name7">Martian Mono</option>
+                    <option value="8" id="name8">Josefin Sans</option>
+                    <option value="9" id="name9">Bebas Neue</option>
+                    <option value="10" id="name10">Dancing Script</option>
+                    <option value="11" id="name11">Pacifico</option>
+                    <option value="12" id="name12">Autour One</option>
+                    <option value="13" id="name13">Space Grotesk</option>
+                    <option value="14" id="name14">Lobster</option>
+                    <option value="15" id="name15">Outfit</option>
+                    <option value="16" id="name16">Satisfy</option>
+                    <option value="17" id="name17">Kalam</option>
+                    <option value="18" id="name18">Righteous</option>
+                    <option value="19" id="name19">Great Vibes</option>
+                    <option value="20" id="name20">Kaushan Script</option>
+                </select>
+            </div>
+            <div class="child" id="size">
+                <input type="text" id="number">
+                <select name="" id="select">
+                    <option value="" id="hide">22</option>
+                    <option value="">8</option>
+                    <option value="">10</option>
+                    <option value="">12</option>    
+                    <option value="">18</option>
+                    <option value="">20</option>
+                    <option value="">22</option>
+                    <option value="">24</option>
+                    <option value="">26</option>
+                    <option value="">30</option>
+                    <option value="">32</option>
+                    <option value="">34</option>
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">70</option>
+                    <option value="">72</option>
+                    <1></1>
+                </select>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+
+    </div>
+    <div id="printableContent"></div>
+    <script src="script.js"></script>
+</body>
+</html>
